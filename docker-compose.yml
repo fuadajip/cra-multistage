@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  cra-multistage:
+    image: cra-multistage
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 8080:80
